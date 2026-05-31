@@ -1,0 +1,109 @@
+html,body {
+    background-color: rgb(20, 20, 30) !important;
+}
+
+.navbar {
+    background-color: rgb(30, 30, 30) !important;
+    box-shadow: 0 0 1rem rgba(0, 255, 255, 0.5) !important;
+}
+.navbar:hover {
+    background-color: rgb(30, 30, 30) !important;
+    box-shadow: 0 0 3rem rgba(0, 255, 255, 0.9) !important;
+}
+
+.navbar-brand {
+    background-color: rgb(35, 35, 35) !important;
+    text-shadow: 0 0 1rem rgba(0, 255, 255, 0.7) !important;
+}
+.navbar-brand:hover{
+    background-color: rgb(35, 35, 35) !important;
+    text-shadow: 0 0 3rem rgba(0, 255, 255, 1) !important;
+    box-shadow: 0 0 3rem rgba(0, 255, 255, 0.2) !important;
+}
+.nav-link {
+    color:white !important;
+}
+.nav-link:hover{
+    text-shadow: 0 0 1rem white !important;
+}
+.shadow , .shadow-lg , .shadow-sm {
+    box-shadow: 0 0.5rem 1rem rgba(0, 255, 255, 0.7);
+}
+.quote{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    text-shadow: 0 0.5rem 1rem rgba(0, 255, 255, 0.7);
+}
+.twocode{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;                     /* Spacing between the code areas */
+    max-width: 1200px;             /* Limits the width for better readability */
+    margin: 0 auto;                /* Centers the container horizontally */
+    align-items: start;            /* Ensures items start at the top */
+}
+.supportedlang{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(100px, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.supportedlang div{
+    background-color: rgb(30, 30, 30) !important;
+    color: white;
+    text-shadow: 0 0 1rem rgba(0, 255, 255, 0.7) !important;
+    box-shadow: 0 0 1rem rgba(0, 109, 109, 0.7) !important;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.6rem;
+}
+.supportedlang div:hover{
+    box-shadow: 0 0 1.5rem rgba(0, 255, 255, 0.8) !important;
+}
+.quote-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quote-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: rgb(25, 25, 35);
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 255, 255, 0.2);
+}
+
+.quote-panel .quote {
+    margin: 0;
+    color: aquamarine;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.05;
+}
+
+.code-panel {
+    padding: 1.5rem;
+    background-color: rgb(18, 18, 28);
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 255, 255, 0.2);
+    overflow: auto;
+}
+
+.code-panel pre {
+    margin: 0;
+    color: #c8f7ff;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+@media (max-width: 900px) {
+    .twocode {
+        grid-template-columns: 1fr;
+    }
+}
