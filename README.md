@@ -1,1 +1,0 @@
-# MindX-JSA-SH
