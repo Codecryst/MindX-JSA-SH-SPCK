@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corder- Login</title>
+    <title>Corder- Signup</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body class="container" style="background-color: rgb(20, 20, 20); justify-content:center;align-items:center;display:flex;min-height:100vh;">
     <div class="card" style="background-color: rgb(30, 30, 30); color: white; box-shadow: 0 1rem 1.5rem rgba(0,255,255,0.3); width: 400px;">
         <div class="card-body">
-            <h3 class="card-title text-center mb-4">Login</h3>
+            <h3 class="card-title text-center mb-4">Signup</h3>
             <form>
                 <div class="mb-3">
-                    <label for="loginEmail" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+                    <label for="signupEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
                 </div>
                 <div class="mb-3">
-                    <label for="loginPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                    <label for="signupPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="signupPassword" placeholder="Password">
                 </div>
                 <label>
-                    <input type="checkbox" id="rememberMe" name="rememberMe" onchange="this.checked ? rememberMeChecked = true : rememberMeChecked = false" />
+                    <input type="checkbox" name="rememberMe" onchange="this.checked ? rememberMeChecked = true : rememberMeChecked = false" />
                     Remember me
                 </label>
-                <button type="button" class="btn btn-primary w-100 mt-3" onclick="login()">Login</button>
-                <h6 class="text-center mt-3">Don't have an account? <a href="./signup.html">Sign up</a></h6>
+                <button type="submit" class="btn btn-primary w-100">Signup</button>
+                <h6 class="text-center mt-3">Already have an account? <a href="./login.html">Log in</a></h6>
                 <p>Want to continue exploring ? return to <a href="./index.html">homepage</a></p>
             </form>
         </div>
     </div>
-    <script src="../statics/scripts/login.js"></script>
+    <script src="../statics/scripts/signup.js"></script>
 </body>
 </html>

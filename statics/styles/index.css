@@ -1,13 +1,23 @@
-html,body {
+html, body {
     background-color: rgb(20, 20, 30) !important;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
     background-color: rgb(30, 30, 30) !important;
     box-shadow: 0 0 1rem rgba(0, 255, 255, 0.5) !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.6rem !important;
 }
+
 .navbar:hover {
     background-color: rgb(30, 30, 30) !important;
     box-shadow: 0 0 3rem rgba(0, 255, 255, 0.9) !important;
@@ -18,46 +28,50 @@ html,body {
     text-shadow: 0 0 1rem rgba(0, 255, 255, 0.7) !important;
     margin-bottom: 0 !important;
 }
-.navbar-brand:hover{
-    background-color: rgb(35, 35, 35) !important;
-    text-shadow: 0 0 3rem rgba(0, 255, 255, 1) !important;
-}
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     background-color: rgb(35, 35, 35) !important;
     text-shadow: 0 0 3rem rgba(0, 255, 255, 1) !important;
     box-shadow: 0 0 3rem rgba(0, 255, 255, 0.2) !important;
 }
+
 .nav-link {
-    color:white !important;
+    color: white !important;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     text-shadow: 0 0 1rem white !important;
 }
-.shadow , .shadow-lg , .shadow-sm {
+
+.shadow, .shadow-lg, .shadow-sm {
     box-shadow: 0 0.5rem 1rem rgba(0, 255, 255, 0.7);
 }
-.quote{
+
+.quote {
     margin-bottom: 4rem;
     margin-top: 2rem;
     text-shadow: 0 0.5rem 1rem rgba(0, 255, 255, 0.7);
 }
-.twocode{
+
+.twocode {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px;                     /* Spacing between the code areas */
-    max-width: 1200px;             /* Limits the width for better readability */
-    margin: 0 auto;                /* Centers the container horizontally */
-    align-items: start;            /* Ensures items start at the top */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
 }
-.supportedlang{
+
+.supportedlang {
     display: grid;
-    grid-template-columns: repeat(7, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 10px;
     width: 100%;
     margin: 0 auto;
     padding: 1rem 0;
 }
-.supportedlang div{
+
+.supportedlang div {
     background-color: rgb(30, 30, 30) !important;
     color: white;
     text-shadow: 0 0 1rem rgba(0, 255, 255, 0.7) !important;
@@ -65,10 +79,12 @@ html,body {
     padding: 0.8rem 0.5rem;
     border-radius: 0.6rem;
 }
-.supportedlang div:hover{
+
+.supportedlang div:hover {
     box-shadow: 0 0 1.5rem rgba(0, 255, 255, 0.8) !important;
 }
-.quote-grid{
+
+.quote-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -109,8 +125,107 @@ html,body {
     word-break: break-word;
 }
 
+#apiDisplay {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: min(100%, 900px);
+}
+
+#apiDisplay img {
+    max-width: 100%;
+    height: auto;
+}
+
+#apiDisplay > div {
+    min-width: 0 !important;
+    width: 100%;
+}
+
+#apiDisplay h2,
+#apiDisplay p {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+@media (max-width: 991px) {
+    #account {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
     .twocode {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    #apiDisplay {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .quote-panel,
+    .code-panel {
+        padding: 1.25rem;
+    }
+
+    .quote-panel .quote {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .code-panel pre {
+        font-size: 0.9rem;
+    }
+
+    #account {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    #account a {
+        width: 100%;
+        padding: 0.7rem 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .quote-panel,
+    .code-panel,
+    #getstarted,
+    #intro,
+    #contact,
+    #apiDisplay {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .quote-panel {
+        gap: 0.75rem;
+    }
+
+    .quote-panel .quote {
+        font-size: 1.5rem;
+    }
+
+    .code-panel {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
