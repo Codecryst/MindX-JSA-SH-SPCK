@@ -65,5 +65,5 @@ function signup() {
     }
 
     document.cookie = `logsign_account=true; path=/; max-age=31536000`;
-    window.location.href = '/pages/';
+    window.location.href = './index.html';
 }
