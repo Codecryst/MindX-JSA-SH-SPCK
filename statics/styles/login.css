@@ -1,0 +1,40 @@
+body.auth-page {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+body.auth-page .auth-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    box-shadow: 0 1rem 1.5rem rgba(0, 255, 255, 0.3);
+}
+
+body.auth-page .auth-card .card-body {
+    padding: 1.5rem;
+}
+
+body.auth-page .form-control {
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+}
+
+body.auth-page .btn {
+    padding: 0.7rem 0.9rem;
+}
+
+@media (max-width: 480px) {
+    body.auth-page {
+        padding: 0.75rem;
+    }
+
+    body.auth-page .auth-card .card-body {
+        padding: 1rem;
+    }
+}

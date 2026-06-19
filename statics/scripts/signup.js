@@ -36,7 +36,7 @@ function NoRememberMe() {
     document.cookie = `password=${password}; path=/;`;
 }
 
-function submit() {
+function signup() {
     const email = document.getElementById('signupEmail').value;
     const password = document.getElementById('signupPassword').value;
 

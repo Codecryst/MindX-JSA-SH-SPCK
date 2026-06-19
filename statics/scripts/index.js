@@ -16,7 +16,7 @@ if(document.cookie.includes('email') && document.cookie.includes('password')&& d
         style="width: 18px; height: 18px;">
     </button>`
 }
-else{
+if(!document.cookie.includes('email')||!document.cookie.includes('password')) {
     document.cookie = `logsign_account=false; path=/; max-age=31536000`;
 }
 const POKE_API_URL = 'https://pokeapi.co/api/v2/pokemon/porygon';

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../statics/styles/signup.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corder- Signup</title>
@@ -24,7 +25,7 @@
                     <input type="checkbox" name="rememberMe" onchange="this.checked ? rememberMeChecked = true : rememberMeChecked = false" />
                     Remember me
                 </label>
-                <button type="submit" class="btn btn-primary w-100">Signup</button>
+                <button type="button" class="btn btn-primary w-100" onclick="signup()">Signup</button>
                 <h6 class="text-center mt-3">Already have an account? <a href="./login.html">Log in</a></h6>
                 <p>Want to continue exploring ? return to <a href="./index.html">homepage</a></p>
             </form>
