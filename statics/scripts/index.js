@@ -11,7 +11,7 @@ if(document.cookie.includes('email') && document.cookie.includes('password')&& d
         class="btn d-flex align-items-center justify-content-center"
         style="width: 18px; height: 18px; border-radius: 999px; padding: 0;"
         onclick="document.cookie='logsign_account=false; path=/; max-age=31536000'; location.reload();">
-        <img src="../../images/logout.png"
+        <img src="https://codecryst.github.io/MindX-JSA-SH-SPCK/images/logout.png"
         alt="Logout"
         style="width: 18px; height: 18px;">
     </button>`
