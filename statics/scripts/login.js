@@ -65,6 +65,5 @@ function login() {
         NoRememberMe();
         document.cookie = `logsign_account=true; path=/`;
     }
-    alert('Access granted');
     window.location.href = './index.html';
 }

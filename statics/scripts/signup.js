@@ -5,7 +5,7 @@ if (document.cookie.includes('email') && document.cookie.includes('password') &&
 }
 
 function getAccounts() {
-    const match = document.cookie.match(/(?:^|; )accounts=([^;]+)/);
+    const match = document.cookie.match(/(?:^|; )accounts=([^;]+)/); //regex
     if (!match) return [];
     try {
         return JSON.parse(decodeURIComponent(match[1]));
