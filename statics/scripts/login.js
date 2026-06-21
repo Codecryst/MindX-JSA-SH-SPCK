@@ -1,6 +1,6 @@
 let rememberMeChecked = false;
 
-if (document.cookie.includes('logsign_account=true')) {
+if (document.cookie.includes('email') && document.cookie.includes('password') && document.cookie.includes('logsign_account=true')) {
     window.location.href = './index.html';
 }
 
@@ -60,11 +60,11 @@ function login() {
 
     if (rememberMeChecked) {
         RememberMe();
+        document.cookie = `logsign_account=true; path=/; max-age=31536000`;
     } else {
         NoRememberMe();
+        document.cookie = `logsign_account=true; path=/`;
     }
-
-    document.cookie = `logsign_account=true; path=/; max-age=31536000`;
     alert('Access granted');
     window.location.href = './index.html';
 }
